@@ -19,12 +19,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField "boolean", "TEST", "false"
-            buildConfigField "String", "HOST_URL", "http://www.release.com/"
+            buildConfigField "String", "HOST_URL", '"http://www.release.com/"'
         }
 
         debug {
             buildConfigField "boolean", "TEST", "true"
-            buildConfigField "String", "HOST_URL", "http://www.debug.com/"
+            buildConfigField "String", "HOST_URL", '"http://www.debug.com/"'
         }
     }
 }
